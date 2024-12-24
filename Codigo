@@ -1,0 +1,28 @@
+import random as rd
+palabras=["capuchino", "café","perro","pelicula","galleta","botella","plato","arbol","navidad","balon","marciano"]
+indice=rd.randint(0,len(palabras)-1)
+secreta=palabras[indice].upper()
+cadena= "-" * len(secreta) 
+intentos_restantes=0
+print(secreta)
+
+while True:
+    print(cadena)
+    letra=input("Introduce una letra ").upper()
+    if letra in secreta:
+        for i in range(len(secreta)):
+            if secreta[i] == letra:
+                cadena = cadena[:i] + letra + cadena[i+1:]
+
+    else:
+        intentos_restantes+=1
+        print("No es correcta, te quedan ", str(6-intentos_restantes)," intentos restantes")
+
+
+        if intentos_restantes==6:
+            print("Lo siento, haz perdido")
+            break 
+
+    if cadena==secreta:
+        print("Haz ganado, felicidades") 
+        break

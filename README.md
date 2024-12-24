@@ -1,0 +1,2 @@
+Anexo en este repositorio mi juego del ahorcado, originalmente lo iba a hacer mostrando la primera y ultima letra de la palabra, y que adivinará la palabra completa, en vez de estar adivinando letra por letra, cré que iba a estar más fácil, pero batallé con la construcción de la cadena, intenté separar la palabra en letras pero no lo lograba al final para esa parte tuve que copiar esa parte de otro codigo que había de internet, pero nuestros codigos eran diferentes, todo lo demás lo hice yo.
+Saludos
